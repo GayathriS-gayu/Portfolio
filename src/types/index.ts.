@@ -1,0 +1,30 @@
+export interface Project {
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+  tags: string[];
+}
+
+export interface Achievement {
+  title: string;
+  date: string;
+  description: string;
+}
+
+export interface Certificate {
+  name: string;
+  issuer: string;
+  date: string;
+  link: string;
+}
+
+export interface PortfolioData {
+  profile: { name: string; headline: string; additionalHeadlines: string[] };
+  bio: { text: string; email: string };
+  skills: { frontend: string[]; backend: string[] };
+  projects: Project[];
+  achievements: Achievement[];
+  certificates: Certificate[];
+  sociallinks: { github: string; linkedin: string; twitter: string };
+}
